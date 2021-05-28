@@ -1,0 +1,37 @@
+FILE SYSTEM COMMANDS
+---------
+ls	list directory
+mkdir	make directory
+cd	change directory
+rm	remove directory or file
+touch	create file
+cp	copy directory or file
+mv	move directory or file
+
+VI COMMANDS
+----------
+a	enter insert mode
+o	insert new line below and enter insert mode
+O	insert new line above and enter insert mode
+x	delete a character
+nx	delete n characters where n is any number
+dw 	delete a word
+ndw	delete n words where n is any number
+dd	delete or cut a line
+ndd	delete n lines where n is any number
+yy	copies a line into a buffer			ex: 3yy will copy 3 lines
+yw	copies a word into a buffer			ex: 7yw cocpies 7 words
+p	paste the copied lines
+u 	undo
+ctrl+r	redo
+/xyz	search for xyz -> press n for next
+. 	do the last command again
+:1 	take me to the first line
+:n	take me to the nth line
+G	take me to the bottom of the file
+:w	write out data from the buffer to a file
+:wq 	write out data and exit
+:x	write out data and exit (same as :wq)
+shift+zz (same as :x and :wq)
+:q	quits editor as long as no changes have been made
+:q!	quits abandoning any changes 

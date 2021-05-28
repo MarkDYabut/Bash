@@ -1,0 +1,19 @@
+#!/bin/bash
+  
+while getopts 'asmdv' opt
+do
+ case $opt in
+  a) aflag="t" ;;
+  s) echo "sub" ;;
+  m) echo "mul" ;;
+  d) echo "div" ;;
+  v) echo "verbose" ;;
+ esac
+done
+echo "hello? $aflag"
+echo $aflag
+echo $1
+if [ "$aflag" = "t" ]
+then
+        echo "hey"
+fi
